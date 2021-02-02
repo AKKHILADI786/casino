@@ -1,0 +1,515 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #EEFBFB;
+    max-width: 1100px;
+    background-image: url("images\\milky-way-2695569_1280.jpg");
+    -webkit-background-size:cover;
+}
+ul{
+    float: right;
+    padding-right: 20px;
+    
+}
+a{
+    display: inline-block;
+    /* margin: 10px; */
+    padding:10px 15px ;
+    /* background-color: aqua; */
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin-top: 12px; 
+    color: white;
+    font-weight: bolder;
+}
+
+#login,a:hover{
+    background-color: #007CC7;
+    transition: 0.5s;
+}
+.divmenu{
+    z-index: 100;
+    min-width: 1366px;
+    position: fixed;;
+    background-color: #12232E;
+    height: 55px;
+    width: 100%;
+    box-shadow: 0.5px 0.5px 20px rgb(109, 109, 109);
+}
+.logo{
+    color: white;
+    font-family: cursive;
+    padding-left: 50px;
+    line-height: 55px;
+    font-size: 40px; 
+    color: #EEFBFB;
+    font-weight: bolder;
+}
+
+.libtn{
+    display: inline-block;
+}
+.game{
+    position: relative;
+    min-width: 1100px;
+    min-height: 570px;
+    height: 570px;
+    width: 1100px;
+    border-radius: 10px;
+    top: 70px;
+    left: 130px;
+    background-color: #12232E;
+    box-shadow: 5px 5px 20px grey;
+}
+.machine{
+    position: relative;
+    top: 30px;
+    left: 130px;
+    border-radius: 10px;
+    background-color: #203647;
+    height: 300px;
+    width: 75%;
+    box-shadow: -1px -1px 5px #EEFBFB;
+
+}
+.board{
+    position: relative;
+    background-color: #203647;
+    height: 200px;
+    width: 50%;
+    top: 50px;
+    left: 280px;
+    border-radius: 10px;
+    box-shadow: -1px -1px 5px #EEFBFB;
+}
+.cards{
+    z-index: 2;
+    display: inline-block;
+    position: relative;
+    height: 250px;
+    width: 220px;
+    background-color: #EEFBFB;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px #12232E;
+    overflow: hidden;
+}
+#one{
+    position: relative;
+    top: 22px;
+    left: 40px;
+}
+#two{
+    position: relative;
+    top: 22px;
+    left: 80px;
+}
+#three{
+    position: relative;
+    top: 22px;
+    left:120px;
+}
+.btn{
+    position: relative;
+    top: 15px;
+    left: 150px;
+    height: 40px;
+    width: 100px;
+    outline: none;
+    color: #EEFBFB;
+    font-size: 20px;
+    border-radius: 50px;
+    border: solid 1px;
+    background-color : #12232E;
+    box-shadow: 2px 2px 2px #494949;
+}
+.btn:hover{
+    transform: translateY(-2px);
+    box-shadow: 5px 5px 20px #707070;
+
+    transition: 0.5s;
+}
+#stop{
+    left: 185px;
+    
+}
+.score1{
+    display: block;
+    position: fixed;
+    height: 100px;
+    width: 200px;
+    background-color: #EEFBFB;
+    top: 510px;
+    left: 460px;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px #12232E;
+    padding: 15px;
+
+}
+#currscore{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#totalscore{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    left: 700px;
+}
+#ttt{
+    position: relative;
+    left: 20px;
+}
+.curr{
+    position: relative;
+    font-size: 25px;
+    top: 10px;
+    left: 60px;
+}
+.rule{
+    position: relative;
+    min-width: 1100px;
+    min-height: 570px;
+    height: 11000px;
+    width: 1100px;
+    border-radius: 10px;
+    top: 70px;
+    left: 130px;
+    background-color: #12232E;
+    box-shadow: 5px 5px 20px grey;
+}
+#ruleh1{
+    position: relative;
+    left: 450px;
+    top: 10px;
+    font-size: 40px;
+    color: #EEFBFB;
+    font-family: cursive;
+    float: center;
+    padding-bottom: 30px;
+    
+}
+.detail{
+    display: block;
+    float:left;
+    list-style-type: disc;
+}
+.ruletxt{
+    margin: 10px;
+    font-size: 20px;
+    color: #EEFBFB;
+    padding-left: 25px;
+    
+}
+.divTable{
+    position: relative;
+    top: 250px;
+    right: 300px;
+}
+td{
+    padding:20px;
+    margin: 2px;
+    background-color: #007CC7;
+    border: 1px solid #fdfdfd;
+    font-family: cursive;
+    color: #EEFBFB;
+    font-size: 20px;
+    width: 400px;
+    text-align: center;
+
+}
+.tdcard{
+    width: 600px;
+}
+.tdvalue{
+    width: 500px;
+}
+.divprac{
+    position: relative;
+    top: 15px;
+    left: 200px;
+    font-size: 20px;
+    font-family: cursive;
+    color: #EEFBFB;
+    font-weight: bolder;
+}
+.changeMode{
+    font-family: cursive;
+    font-size: 12px;
+    position: relative;
+    color: #EEFBFB;
+    left:890px;
+    top: 53px;
+}
+.tes{
+    z-index: 1;
+    display: grid;
+    height: 240px;
+    margin-left: 30px; 
+    margin-top: 5px;
+    animation: anim 1s infinite;
+}
+@keyframes anim{
+    0%{
+        transform: translatey(-300px);
+    }
+    100%{
+        transform: translateY(300px);
+    }
+}
+/********************************************vs computer code**************************************/
+.comboard{
+    width: 95%;
+    left: 20px;
+}
+.Player{
+    display: inline-block;
+    position: fixed;
+    
+    /* background-color: yellow; */
+    height: 190px;
+    margin-left: 7px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+#p1{
+    width: 400px;
+}
+
+#win{
+    padding: 30px;
+    height: 190px;
+    left: 0px;
+    background-color:#EEFBFB;
+    left: 560px;
+    width: 210px;
+    text-align: center;
+}
+#add{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#result{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bolder;
+}
+#play1{
+    position: fixed;
+    top: 440px;
+    left:210px;
+}
+#stop1{
+    position: fixed;
+    top: 440px;
+    left: 370px;
+}
+.score2{
+    display: block;
+    position: fixed;
+    height: 100px;
+    width: 180px;
+    background-color: #EEFBFB;
+    top: 510px;
+    left: 167px;
+    border-radius: 10px;
+    box-shadow:2px 2px 2px #12232E;
+    padding: 15px;
+
+}
+#currscore1{
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+#totalscore1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    left: 366px;
+}
+.name_player{
+    left: 148px;
+    top: 53px;
+}
+.curr1{
+    position: relative;
+    font-size: 25px;
+    top: 10px;
+    left: 50px;
+}
+
+#p2{
+    left: 780px;
+    bottom: 25px;
+    /* background-color: green; */
+    width: 400px;
+}
+#play2{
+    left: 60px;
+    bottom: 5px;
+}
+#stop2{
+    left: 130px;
+    bottom: 5px;
+}
+#currscore2{
+    font-size: 19px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    left: 800px;
+}
+#totalscore2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    left: 995px;
+}
+.name_player2{
+    left: 160px;
+    top: 12px;
+}
+
+/***************************************************************************************************/
+
+/************************* local code***************************************************************/
+
+/***************************************************************************************************/
+*{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.server{
+    height: 150px;
+    width: 700px;
+    position: relative;
+    top: 200px;
+    left: 370px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    /* border:solid 1px; */
+    font-weight: bolder;
+    color: #EEFBFB;
+}
+/**************************************************/
+.bod{
+    background-image: url("images\\milky-way-2695569_1280.jpg");
+    -webkit-background-size:cover;
+    height: 100vh;
+    width: 100vw;
+}
+.wrapper{
+    width: 450px;
+    height: 520px;
+    color: #000;
+    background-color: #12232E;
+    padding: 40px 30px;
+    border: 1px solid #12232E;
+    box-shadow: 10px 10px 100px rgb(70, 70, 70);
+    transform: translate(470px,120px);
+    border-radius: 10px;
+}
+.log{
+    font-weight: bold;
+    font-size: 30px;
+    color: #EEFBFB;
+    font-family: cursive;
+    padding-bottom: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrapper input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loginp{
+    outline: none;
+    height: 40px;
+    border-radius: 30px;
+    font-size: 16px;
+    padding: 15px;
+}
+#logi{
+    width: 120px;
+    height: 40px;
+    position: relative;
+    left: 130px;
+    border-radius: 30px;
+    background-color: #12232E;
+    border: 1px solid white;
+    border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px grey;
+    /* transition: 0.5s; */
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+#logi:active{
+    transform: translate(-1px,-1px);
+    box-shadow: 2px 2px 5px grey;
+    transition: 0.1s;
+}
+#logi:hover{
+    transform: translate(-2px,-2px);
+    box-shadow: 2px 2px 20px grey;
+    background-color: #007CC7;
+    transition: 0.7s;
+}
+.bottom-text{
+    margin: 20px;
+    color: #EEFBFB;
+}
+.bottom-text input{
+    float: left;
+    width: 10%;
+}
+.bottom-text .forget{
+    float: right;
+}
+.socials{
+    margin: 12%;
+    text-align: center;
+}
+.socials .links{
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.socials .links .asd{
+    margin: 4px;
+}
+.socials .links:nth-child(1){
+    background-color: #4267B2;
+}
+.socials .links:nth-child(2){
+    background-color: #BB001B;
+}
+.socials .links:nth-child(3){
+    background-color: #0e76a8;
+}
+.socials .links:nth-child(4){
+    background-color: #1DA1F2;
+}
+/*************************************************************/
+.regbody{
+    height: 800px;
+}
+.regbod{
+    height: 630px;
+}

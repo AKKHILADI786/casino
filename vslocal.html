@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local</title>
+    <link rel="stylesheet" href="style.css">
+    <script asyn defer src="local.js"></script>
+</head>
+
+<body>
+    <div class="divmenu">
+        <span class="logo">Casino</span>
+        <ul class="link">
+            <li class="libtn"><a href="index.html" class="abtn"> home</a></li>
+            <li class="libtn"><a href="rules.html" class="abtn"> rule</a></li>
+            <li class="libtn"><a href="vscomputer.html" class="abtn"> vs computer</a></li>
+            <li class="libtn"><a href="vslocal.html" class="abtn"> vs local</a></li>
+            <li class="libtn"><a href="online.html" class="abtn"> online play</a></li>
+            <li class="libtn"><a href="register.html" class="abtn"> register</a></li>
+            <li class="libtn"><a href="login.html" class="abtn" id="login"> login</a></li>
+        </ul>
+    </div>
+    <div class="game">
+        <div class="machine">
+            <div class="cards" id="one">
+                <img src="images/JPEG/AD.jpg" alt="image" class="tes" id="test1">
+            </div>
+            <div class="cards" id="two">
+                <img src="images/JPEG/AD.jpg" alt="image" class="tes" id="test2">
+            </div>
+            <div class="cards" id="three">
+                <img src="images/JPEG/AD.jpg" alt="image" class="tes" id="test3">
+            </div>
+        </div>
+        <div class="board comboard">
+            <div class="Player" id="p1">
+            <div class="divprac name_player"><u>Player 1</u></div>
+
+                <button class="btn" id="play1">PLAY</button>
+                <button class="btn" id="stop1">STOP</button>
+                <div class="score">
+                    <div class="score1 score2" id="currscore1">
+                        <span>Current Score</span>
+                        <hr>
+                        <div class="curr curr1" id="divCurrScore1">000</div>
+                    </div>
+                    <div class="score1 score2" id="totalscore1">
+                        <span id="ttt">Total Score</span>
+                        <hr>
+                        <span class="curr curr1" id="divTotalScore1">000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="Player" id="win">
+                <div id="add">Player 1 Turn</div>
+                <hr>
+                <div id="result"></div>
+            </div>
+            <div class="Player" id="p2">
+                
+                <button class="btn" id="play2">PLAY</button>
+                <button class="btn" id="stop2">STOP</button>
+                <div class="divprac name_player2"><u>Player 2</u></div>
+                <div class="score">
+                    <div class="score1 score2 score3" id="currscore2">
+                        <span>Current Score</span>
+                        <hr>
+                        <div class="curr curr1 curr2" id="divCurrScore2">000</div>
+                    </div>
+                    <div class="score1 score2 score 3" id="totalscore2">
+                        <span id="ttt">Total Score</span>
+                        <hr>
+                        <span class="curr curr1 curr2" id="divTotalScore2">000</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div class="changeMode">* Change the Modes from Menu bar</div>
+    </div>
+
+</body>
+
+</html>
